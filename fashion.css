@@ -1,0 +1,108 @@
+body {
+    font-family: Georgia;
+}
+
+h1 {
+  color: red;
+  margin-left: 27px;
+  margin-bottom: -15px;
+}
+
+h2 {
+  color: grey;
+}
+
+a {
+  color: red;
+}
+
+
+/*added a flex container */
+.flexbox-container {
+  display: flex;
+  width: 100%
+
+}
+.sidebar{
+  order: 1;
+  flex: 2;
+  flex-basis: auto;
+  padding: 75px;
+}
+
+.main {
+  order: 1;
+  flex: 4;
+  padding: 35px;
+}
+
+
+nav {
+  background-color: black;
+  margin: 25px 25px;
+  padding: 3px;
+  text-align: left;
+}
+
+nav ul li {
+  display: inline;
+
+}
+
+nav a {
+  color: #f2f2f2;
+  padding: 45px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+p a {
+  text-decoration: none;
+  float: right;
+}
+
+footer a {
+ margin: 2px;
+ padding: 5px;
+ text-decoration: none;
+ font-size: 14px;
+}
+
+
+#copyright {
+  color: grey;
+  margin-left: 33px;
+
+}
+
+#title {
+  color: black;
+  font-size: 20px;
+}
+
+#headtitle, #popularposts, #about{
+  color: grey;
+  font-size: 19px;
+}
+#mainimage {
+  width:  625px;
+  height: 250px;
+}
+
+.firstcharacter {
+  color: grey;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+
+@media screen and (max-width: 1092px) {
+  .flexbox-container {
+  flex-basis: 50%;
+}
+}
